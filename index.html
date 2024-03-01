@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <h1>Deixe sua arte aqui!</h1>
+    <div class="container">
+        <div class="grade"></div>
+        
+        <div class="escolha">
+            <label for="grid">Alterar o tamanho da grade:</label>
+            <select id="grid">
+                <option value="8">8 x 8</option>
+                <option value="16" selected>16 x 16</option>
+                <option value="32">32 x 32</option>
+                <option value="64">64 x 64</option>
+            </select>
+
+            <label for="cor">Escolha a cor:</label>
+            <input type="color" id="cor">
+
+            <div class="botoes">
+                <button class="bttDesenhar"><img src="brush-48png.png" alt="pincel" title="Desenhar"></button>
+                <button class="bttApagador"><img src="eraser.png" alt="borracha de apagar" title="Apagar desenho"></button>
+                <button class="bttReiniciar"><img src="reload-icon.png" alt="Reiniciar desenho" title="Reiniciar desenho"></button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
